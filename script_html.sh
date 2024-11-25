@@ -1,3 +1,4 @@
+#!/bin/bash
 cd /home/opc/projeto
 sudo rm -rf front-teste
 git clone https://github.com/cleberleao/front-teste.git
