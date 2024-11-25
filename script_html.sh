@@ -1,4 +1,6 @@
 #!/bin/bash
+sudo podman stop front-teste-cleber
+sudo podman rm front-teste-cleber
 cd /home/opc/projeto
 sudo rm -rf front-teste
 git clone https://github.com/cleberleao/front-teste.git
