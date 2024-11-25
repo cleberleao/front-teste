@@ -1,0 +1,11 @@
+# Use a imagem base do Apache
+FROM docker.io/library/httpd:2.4
+
+# Copie os arquivos HTML para o diretório padrão do Apache
+COPY ./front-test/ /usr/local/apache2/htdocs/
+
+# Exponha a porta 80 para acessar o servidor
+EXPOSE 80
+
+# Comando padrão do Apache já configurado
+CMD ["httpd-foreground"]
